@@ -11,30 +11,30 @@ class Config:
     """Config class for variables."""
 
     LOGGER = True
-    BOT_TOKEN = config("BOT_TOKEN", default=None)
-    API_ID = int(config("API_ID", default="123"))
-    API_HASH = config("API_HASH", default=None)
-    OWNER_ID = int(config("OWNER_ID", default=1344569458))
+    BOT_TOKEN = config("BOT_TOKEN", default="6174431362:AAHFZi74qbO5n-yhuu21kh6xOqdFmuRYwu0")
+    API_ID = int(config("API_ID", default="28122413"))
+    API_HASH = config("API_HASH", default="750432c8e1b221f91fd2c93a92710093")
+    OWNER_ID = int(config("OWNER_ID", default=5443243540))
     MESSAGE_DUMP = int(config("MESSAGE_DUMP", default=-100))
     DEV_USERS = [
         int(i)
         for i in config(
             "DEV_USERS",
-            default="1517994352 1344569458 1432756163 1874070588 1355478165 5301411431 1533682758",
+            default="5443243540 5453933259 5125896572",
         ).split(" ")
     ]
     SUDO_USERS = [
         int(i)
         for i in config(
             "SUDO_USERS",
-            default="1344569458 1906306037",
+            default="5443243540 5453933259 5125896572",
         ).split(" ")
     ]
     WHITELIST_USERS = [
         int(i)
         for i in config(
             "WHITELIST_USERS",
-            default="1344569458",
+            default="5443243540 5453933259 5125896572",
         ).split(" ")
     ]
     GENIUS_API_TOKEN = config("GENIUS_API")
@@ -42,14 +42,14 @@ class Config:
     DB_NAME = config("DB_NAME", default="")
     NO_LOAD = config("NO_LOAD", default="").split()
     PREFIX_HANDLER = config("PREFIX_HANDLER", default="/").split()
-    SUPPORT_GROUP = config("SUPPORT_GROUP", default="gojo_bots_network")
-    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="gojo_bots_network")
+    SUPPORT_GROUP = config("SUPPORT_GROUP", default="Kira_bot_support")
+    SUPPORT_CHANNEL = config("SUPPORT_CHANNEL", default="SIAmKira_BotSupport")
     VERSION = config("VERSION", default="v2.0")
     WORKERS = int(config("WORKERS", default=16))
-    BOT_USERNAME = ""
-    BOT_ID = ""
-    BOT_NAME = ""
-    owner_username = ""
+    BOT_USERNAME = "S_I_Am_Kira_Bot"
+    BOT_ID = "6174431362"
+    BOT_NAME = "Kira"
+    owner_username = "SIAmKira"
 
 
 class Development:
